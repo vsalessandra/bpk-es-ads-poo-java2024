@@ -15,10 +15,6 @@ public class Livro {
     private Integer paginaAtual = 1;
     private Boolean concluido = false;
 
-    public Livro(String titulo) {
-        this.titulo = titulo;
-    }
-
     public Livro(String titulo, String autor, Integer numeroDePaginas) {
         this.titulo = titulo;
         this.autor = autor;
@@ -26,12 +22,11 @@ public class Livro {
     }
 
     public void abrirLivro(){
-        System.out.println("Abrindo livro...");
         this.aberto = true;
     }
 
     public void lerPagina(){
-        System.out.println("Lendo a página...");
+
         if(paginaAtual.equals(numeroDePaginas)){
             concluido = true;
         }else{

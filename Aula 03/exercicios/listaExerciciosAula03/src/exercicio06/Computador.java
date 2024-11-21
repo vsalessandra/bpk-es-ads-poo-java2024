@@ -1,26 +1,15 @@
 package exercicio06;
 
-/**
- * 6 - Crie uma classe Computador com atributos como
- * processador, memoriaRAM, e armazenamento.
- * Adicione métodos para ligar e desligar o computador.
- */
 public class Computador {
-
     private String processador;
-
     private String memoriaRAM;
+    private int armazenamento;
+    private boolean ligado = false;
 
-    private String armazenamento;
-
-    private Boolean ligado;
-
-
-    public Computador(String processador, String memoriaRAM, String armazenamento) {
+    public Computador(String processador, String memoriaRAM, int armazenamento) {
         this.processador = processador;
         this.memoriaRAM = memoriaRAM;
         this.armazenamento = armazenamento;
-        this.ligado = false;
     }
 
     public String getProcessador() {
@@ -31,22 +20,22 @@ public class Computador {
         return memoriaRAM;
     }
 
-    public String getArmazenamento() {
+    public int getArmazenamento() {
         return armazenamento;
     }
 
-    public void ligar() {
-        System.out.println("Ligando computador");
+    public boolean isLigado() {
+        return ligado;
+    }
+
+    public void ligarPC() {
+        System.out.println("Ligando pc...");
         ligado = true;
     }
 
-    public void desligar() {
-        System.out.println("Desligando computador");
+    public void desligarPC() {
+        System.out.println("Desligando pc...");
         ligado = false;
-    }
-
-    public String getStatusComputador() {
-        return ligado ? "Computador está ligado" : "Computador está desligado";
     }
 
     @Override
@@ -54,7 +43,8 @@ public class Computador {
         return "Computador{" +
                 "processador='" + processador + '\'' +
                 ", memoriaRAM='" + memoriaRAM + '\'' +
-                ", armazenamento='" + armazenamento + '\'' +
+                ", armazenamento=" + armazenamento +
+                ", ligado=" + ligado +
                 '}';
     }
 }

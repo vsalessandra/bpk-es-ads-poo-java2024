@@ -1,20 +1,15 @@
 package exercicio05;
 
 public class TesteCachorro {
-
     public static void main(String[] args) {
-        Cachorro cachorro = new Cachorro("Bobby", "Tombê de Lateau", 20);
+        Cachorro cachorro = new Cachorro("Bobby", 5, "Pastor Alemao");
 
-        System.out.println(cachorro);
-        System.out.println(cachorro.getNome());
-        cachorro.setNome("");
-        System.out.println(cachorro.getNome());
-        cachorro.setNome(null);
-        System.out.println(cachorro.getNome());
-        cachorro.setNome("Bobby Stanley");
-        System.out.println(cachorro.getNome());
+        Cachorro cachorro1 = new Cachorro("layla", 6, "pincher");
 
-        System.out.println(cachorro);
-
+        System.out.println(cachorro1.toString());
+        cachorro1.Latir();
+        cachorro1.Correr();
+        System.out.println(cachorro.toString());
+        cachorro.Latir();
     }
 }

@@ -1,58 +1,67 @@
 package exercicio07;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
-/**
- * 7 - Implemente uma classe Aluno com atributos
- * nome, matricula, e curso.
- * Adicione um método para calcular a média de notas.
- */
 public class Aluno {
     private String nome;
-    private String matricula;
+    private int matricula;
     private String curso;
-    private Double media = 0.0;
+    private double[] notas;
 
-    private List<Double> notas;
-
-    public Aluno(String nome, String matricula, String curso) {
+    public Aluno(String nome, int matricula, String curso, double[] notas) {
         this.nome = nome;
         this.matricula = matricula;
         this.curso = curso;
-        this.notas = new ArrayList<>();
+        this.notas = notas;
     }
 
-    public void registrarNota(Double nota) {
-        notas.add(nota);
-        calcularMedia();
+    public String getNome() {
+        return nome;
     }
 
-    private void calcularMedia() {
-//        media = notas.stream()
-//                .mapToDouble(n -> n)
-//                .average()
-//                .getAsDouble();
+    public int getMatricula() {
+        return matricula;
+    }
 
-        Double somatorio = 0.0;
-        for (Double nota : notas) {
-            somatorio+=nota;
+    public String getCurso() {
+        return curso;
+    }
+
+    public double[] getNotas() {
+        return notas;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public void setNotas(double[] notas) {
+        this.notas = notas;
+    }
+
+    public double calcularMedia() {
+        double soma = 0.0;
+        for (double nota : notas) {
+            soma += nota;
         }
-
-        media = somatorio / notas.size();
-
-    }
-
-    public Double getMedia() {
-        return media;
+        return soma / notas.length;
     }
 
     @Override
     public String toString() {
         return "Aluno{" +
                 "nome='" + nome + '\'' +
-                ", matricula='" + matricula + '\'' +
+                ", matricula=" + matricula +
                 ", curso='" + curso + '\'' +
+                ", nota=" + calcularMedia() +
                 '}';
     }
 }

@@ -5,26 +5,14 @@ package exercicio03;
  * Adicione um método que imprime uma apresentação da pessoa.
  */
 public class Pessoa {
-    private String nome;
-    private Integer idade;
-    private Double altura;
+    public String nome;
+    public int idade;
+    public double altura;
 
-    public Pessoa(String nome, Integer idade, Double altura) {
+    public Pessoa(String nome, int idade, double altura) {
         this.nome = nome;
         this.idade = idade;
         this.altura = altura;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public Integer getIdade() {
-        return idade;
-    }
-
-    public Double getAltura() {
-        return altura;
     }
 
     @Override

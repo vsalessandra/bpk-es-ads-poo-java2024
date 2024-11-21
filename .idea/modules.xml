@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aula 01/Aula 01.iml" filepath="$PROJECT_DIR$/Aula 01/Aula 01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExCarro/ExCarro.iml" filepath="$PROJECT_DIR$/ExCarro/ExCarro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExLivro/ExLivro.iml" filepath="$PROJECT_DIR$/ExLivro/ExLivro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bpk-es-ads-poo-java2024.iml" filepath="$PROJECT_DIR$/.idea/bpk-es-ads-poo-java2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula 03/exercicios/exercicios.iml" filepath="$PROJECT_DIR$/Aula 03/exercicios/exercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula 02/exercicios/exercicios2.iml" filepath="$PROJECT_DIR$/Aula 02/exercicios/exercicios2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExerSala/javaBasic/javaBasic.iml" filepath="$PROJECT_DIR$/ExerSala/javaBasic/javaBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExerSala/javaClassObject/javaClassObject.iml" filepath="$PROJECT_DIR$/ExerSala/javaClassObject/javaClassObject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExerSala/projetoCarro/projetoCarro.iml" filepath="$PROJECT_DIR$/ExerSala/projetoCarro/projetoCarro.iml" />
+    </modules>
+  </component>
+</project>
